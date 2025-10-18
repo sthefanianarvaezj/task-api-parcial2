@@ -53,7 +53,7 @@ function createTaskRouter(taskService) {
     }
   });
 
-  // GET /tasks/overdue - Vencidas (Opcional)
+  // GET /tasks/overdue - Vencidas
   router.get('/tasks/overdue', (req, res) => {
     try {
       const tasks = taskService.listOverdue();
